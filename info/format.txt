@@ -1,0 +1,20 @@
+[[ FORMAT ]]
+- Title: 130 Characters Including Spaces
+- Abstract: 175 words unrefernced
+- Main Text: 3500 words, Excluding Abstract, References, Methods, Figures, Tables and Legends
+- Display Items: 8 including figures and/or Tables
+- References: upto 50
+- Sections:
+    - Introduction
+    - Results
+    - Discussion
+    - Online Methods
+    - Acknowledgements
+    - Author Contribs
+    - Competing Interests
+
+
+[[ CURRENT STATS ]]
+Abstract: 165 words 
+Main: 2500 words (excluding abstarct, refernces, figures etc ...)
+References: 23

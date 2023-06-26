@@ -1,0 +1,6 @@
+#! /bin/bash
+
+echo -e "\n > RUNNING SCRIPTS < \n"
+./nocrm.sh
+./crm.sh
+python t_test_run.py

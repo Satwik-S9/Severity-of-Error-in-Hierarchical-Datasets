@@ -1,0 +1,47 @@
+[12.10.2022 - 16.10.2022]
+- Current Run Counts: 66-70
+    - Medians Calculated for each model
+    - Plotted Results and minimum and maximum sample
+    - The median and the severity mean are not to far away so it shows that the 
+      data is not skewed towards any side thus from this we know that each time our model makes
+      a mistake is because it is biased towards that label on an average per batch.
+    - Checking AUC for labels of Resnet152 we have Atelectasis and Cardiomegaly at the lowest AUC so we can understand
+      why are these to labels causing the most severity.
+    - Similarly for Efficientnetb4 we have again a high severity for Atelectasis and Cardiomegaly because these have 
+      the lowest AUC.
+
+- IRMA Dataset:
+    - See project board in Notion.
+
+[17.10.2022]
+HXE RESULT with CRM --DENSENET121
+("Final Stats after the run: {'run_no. 79': {'model': 'models/pretrained/hxe', "
+ "'val_loss': -0.004331681755795792, 'val_acc': 0.0, 'val_time': '28.5282s', "
+ "'Best AUC': 0.66483516, 'severity_stats': {'avg_severity': 1.8875, "
+ "'min_severity_batch': 1.84375, 'max_severity_batch': 1.9375, '%-severity': "
+ "62.916666666666664}, 'crm_metrics': {'top-1 error': 0.0, 'mistake severity': "
+ "1.7, 'hierarchical distance@1': 1.7, 'hierarchical distance@5': 1.7, "
+ "'hierarchical distance@20': 1.792857142857143}, 'batch_wise_median': [2, 2, "
+ "2, 2, 1, 2, 2], 'model_median': 1.8571428571428572}}")
+
+[13.11.2022]
+HXE RESULT with CRM --RESNET18
+("Final Stats after the run: {'run_no. 82': {'model': "
+ "'models/pretrained/hxe-res', 'val_loss': -0.018713890010509004, 'val_acc': "
+ "0.14285714285714285, 'val_time': '26.7051s', 'Best AUC': 0.62637365, "
+ "'severity_stats': {'avg_severity': 1.6937499999999999, 'min_severity_batch': "
+ "1.53125, 'max_severity_batch': 1.78125, '%-severity': 56.458333333333336}, "
+ "'crm_metrics': {'top-1 error': 0.0, 'mistake severity': 1.6, 'hierarchical "
+ "distance@1': 1.6, 'hierarchical distance@5': 1.8, 'hierarchical "
+ "distance@20': 1.792857142857143}, 'batch_wise_median': [1, 2, 2, 1, 2, 2, "
+ "2], 'model_median': 1.7142857142857142}}")
+
+ [12.12.2022]
+ Yes BCE is used for multi-label classification in fact it benefits over CXE as CXE is used when the given sample has 
+ only one class label attached to it but when we have multiple class labels for a sample we use the BCELoss.
+
+[20.12.2022]
+- Write BCE vs HXE: Mathematical
+- Rewrite Section 2
+- Rewrite Result Interpretation
+- DONE: Coding Part for HXE and Visualization of Featuremaps ; LEFT: ToRun on Server
